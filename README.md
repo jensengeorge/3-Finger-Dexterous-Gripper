@@ -1,5 +1,55 @@
-# 3 FINGER GRIPPER
-This project demonstrates two methods for controlling a 3-finger dextrous gripper using an Arduino Uno and a 360° positional servo:
+# 3-Finger Dexterous Robotic Gripper
+
+**Project Lead:** Jensen George  
+**Organization:** Open Droids  
+**Role:** Mechanical Engineering Intern  
+**Project Type:** Robotics Development Project
+
+Led the development of a **3-finger dexterous robotic gripper** at Open Droids, collaborating with two fellow engineering interns throughout system integration, controls development, prototyping, and testing.
+
+I independently designed the **complete mechanical CAD assembly and every custom component within it**, including a custom **tri-axis rack-and-pinion actuation mechanism** developed to translate a single actuation input into coordinated motion across all three fingers.
+
+The project combined mechanical design, electromechanical integration, embedded control, and ROS 2 communication to develop and validate a functional prototype. The system evolved through two control architectures: an initial **ROS 2 interface using RS485 serial communication** and a final **standalone IR remote-control implementation**.
+
+---
+
+## My Contributions
+
+- Served as **project lead** for the three-intern engineering team through design, integration, prototyping, and testing
+- Independently designed the **entire mechanical CAD assembly**, including every custom-designed component used within the gripper mechanism
+- Conceived and developed a custom **tri-axis rack-and-pinion mechanism** to coordinate actuation across the gripper's three fingers
+- Iterated the mechanical architecture based on actuation requirements, packaging constraints, prototype behavior, and system testing
+- Produced CAD models and engineering documentation to support fabrication, assembly, and design iteration
+- Supported integration of the mechanical system with servo actuation and Arduino-based embedded control
+- Contributed to integration of **ROS 2 control over RS485 serial communication**
+- Performed prototype assembly, troubleshooting, testing, and validation alongside the engineering team
+
+---
+
+# Mechanical Design
+
+## Tri-Axis Rack-and-Pinion Actuation
+
+A central mechanical challenge was developing an actuation architecture capable of coordinating **three fingers arranged around the gripper** while maintaining a compact assembly.
+
+To address this, I designed a custom **tri-axis rack-and-pinion mechanism** in which the gripper's three finger actuation paths are mechanically coordinated through the central drive architecture. The mechanism converts actuator input into coordinated motion across the three fingers while consolidating the transmission within the gripper assembly.
+
+I developed the mechanism from concept through CAD implementation as part of the complete gripper assembly, including the individual custom components, interfaces, and supporting geometry required for integration.
+
+### CAD Design Ownership
+
+The complete gripper CAD assembly was designed independently by **Jensen George**. This included the overall assembly architecture as well as each custom mechanical component incorporated into the design.
+
+Design development included:
+
+- Overall gripper architecture and packaging
+- Tri-axis rack-and-pinion transmission
+- Finger mechanisms and associated geometry
+- Mechanical interfaces between components
+- Servo integration and transmission geometry
+- Assembly constraints and component fit
+- Iterative redesign based on prototype and testing results
+
 
 1. **ROS 2 Serial Control (RS485)**:
 An earlier version of the project enabled **ROS 2** control over **RS485 serial communication**. A custom ROS 2 Python node published open and close commands to the Arduino, allowing collaboration with larger robotic systems and automation frameworks
