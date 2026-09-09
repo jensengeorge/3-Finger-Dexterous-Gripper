@@ -11,6 +11,9 @@ I independently designed the **complete mechanical CAD assembly and every custom
 
 The project combined mechanical design, electromechanical integration, embedded control, and ROS 2 communication to develop and validate a functional prototype. The system evolved through two control architectures: an initial **ROS 2 interface using RS485 serial communication** and a final **standalone IR remote-control implementation**.
 
+<p align="center">
+  <img src="Media/gripper_demo.gif" width="700" alt="3-Finger Dexterous Gripper Demonstration">
+</p>
 ---
 
 ## My Contributions
